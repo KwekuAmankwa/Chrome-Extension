@@ -22,9 +22,7 @@ function renderLeads(){
                 <a href='${myLeads[i]}' target='_blank'>
                     ${myLeads[i]}
                 </a>
-            </li>`
-        console.log(listItems)
-        
+            </li>`       
     }
     ulEl.innerHTML = listItems
 }
