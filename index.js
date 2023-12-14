@@ -6,7 +6,11 @@ const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
 let leadsLS = JSON.parse(localStorage.getItem("myLeads"))
-console.log(leadsLS)
+
+if (leadsLS){
+    myLeads = leadsLS
+    renderLeads()
+}
 
 inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value)
